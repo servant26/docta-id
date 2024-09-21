@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docta ID</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Swiper JS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="home/style.css">
+</head>
+<body>
+    
+<!-- Header Section -->
+<!--Awal Navbar-->
+<nav class="navbar sticky-top navbar-expand-lg bg-dark navbar-dark">
+    <div class="container-fluid m-2 d-flex align-items-center">
+        <div class="dropdown">
+            <a class="navbar-brand" href="#">
+                <img src="docta.png" class="navbar-logo" alt="Docta Logo" style="width: 50px; height: 50px;">
+                <span class="d-inline d-lg-none ms-2 text-white">Docta ID</span>
+            </a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item mx-3 d-none d-lg-block">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item mx-3 d-block d-lg-none">
+                    <a class="nav-link" href="#">Menu Utama</a>
+                </li>
+                <li class="nav-item mx-3 d-block d-lg-none">
+                    <a class="nav-link" href="#">Artikel Kesehatan</a>
+                </li>
+                <li class="nav-item mx-3 d-block d-lg-none">
+                    <a class="nav-link" href="#">Lainnya</a>
+                </li>
+                <li class="nav-item mx-3 d-none d-lg-block">
+                    <a class="nav-link" href="feedback/feedback.html">Feedback</a>
+                </li>
+                <li class="nav-item mx-3 d-none d-lg-block">
+                    <a class="nav-link" href="qna/qna.html">QnA</a>
+                </li>
+                <li class="nav-item mx-3 d-none d-lg-block">
+                    <a class="nav-link" href="chatbot.html">Tanya Docta</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--Akhir navbar-->
+
+<div class="wadah">
+<div class="container-fluid mt-4">
+    <div class="card custom-card bg-primary text-white shadow d-flex flex-row w-100">
+        <!-- Left side with doctor image -->
+        <img src="docta2.png" alt="Doctor Vector" class="card-vector">
+        
+        <!-- Right side with text and button -->
+        <div class="p-3">
+            <h5 class="card-title">Tanya Docta</h5>
+            <p class="card-text">Ingin bertanya pada Docta? klik disini</p>
+            <a href="../chatbot.html" class="btn btn-outline-light">Lets go</a>
+        </div>
+    </div>
+</div>
+
+
+<!-- Main Content -->
+<div class="konten">
+<!-- Navigation Images -->
+<div class="row mt-4">
+    <h6 class="mb-3">Menu Utama</h6>
+    <div class="col-3 text-center">
+        <a href="#" class="menu-item">
+            <img src="hospital.png" alt="Faskes Terdekat" class="img-fluid mb-2">
+            <p>Faskes Terdekat</p>
+        </a>
+    </div>
+    <div class="col-3 text-center">
+        <a href="bmi/bmi.html" class="menu-item">
+            <img src="bmi.png" alt="Kalkulator BMI" class="img-fluid mb-2">
+            <p>Kalkulator BMI</p>
+        </a>
+    </div>
+    <div class="col-3 text-center">
+        <a href="kalori/kalori.html" class="menu-item">
+            <img src="calories.png" alt="Kalkulator Kalori" class="img-fluid mb-2">
+            <p>Kalkulator Kalori</p>
+        </a>
+    </div>
+    <div class="col-3 text-center">
+        <a href="olahraga/olahraga.html" class="menu-item">
+            <img src="running.png" alt="Olahraga Harian" class="img-fluid mb-2">
+            <p>Olahraga Harian</p>
+        </a>
+    </div>
+</div>
+
+    <!-- Educational Section -->
+    <div class="mt-2">
+        <div class="card p-3">
+            <div class="d-flex flex-row align-items-center">
+                <img src="healthy.png" alt="Kusioner kesehatan" class="img-kusioner">
+                <div>
+                    <h5>Isi Kusioner Kesehatan</h5>
+                    <p>Cek kondisi kesehatan kamu dengan cara mengisi kusioner</p>
+                </div>
+            </div>
+            <div>
+                <a href="kusioner/kusioner.html" class="btn btn-primary w-100 mt-2">Isi Kuesioner</a>
+            </div>
+        </div>
+    </div>
+
+<!-- Articles Section -->
+<div class="mt-4">
+    <h6 class="mb-3">Artikel Kesehatan</h6>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="artikel-nutrisi.html" class="card-link">
+                    <div class="card">
+                        <img src="schedule.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Nutrisi untuk Kesehatan Mental</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="artikel-olahraga.html" class="card-link">
+                    <div class="card">
+                        <img src="running.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Olahraga: Kunci Hidup Sehat</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="artikel-tidur.html" class="card-link">
+                    <div class="card">
+                        <img src="sleep.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Tidur Berkualitas, Hidup Berkualitas</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="artikel-makanan.html" class="card-link">
+                    <div class="card">
+                        <img src="balanced-diet.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Makanan Super untuk Imunitas</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="artikel-makanan.html" class="card-link">
+                    <div class="card">
+                        <img src="balanced-diet.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Makanan Super untuk Imunitas</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="mt-4"> 
+            <!-- Swiper controls -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</div>
+
+<!-- News Section -->
+<div class="mt-4">
+    <h6 class="mb-3">Lainnya</h6>
+    <div class="main-container">
+        <!-- Section 1 -->
+        <a href="tantangan/tantangan.html" class="info-card">
+            <div class="icon-container">
+                <img src="event-list.png" alt="tantangan kesehatan">
+            </div>
+            <div class="text-content">
+                <h2>Tantangan Kesehatan Harian</h2>
+                <p>Ikuti tantangan harian untuk meningkatkan kesehatan</p>
+            </div>
+            <div class="action-arrow">
+                <span>&gt;</span>
+            </div>
+        </a>
+
+        <!-- Section 2 -->
+        <a href="kuis/kuis.html" class="info-card">
+            <div class="icon-container">
+                <img src="quiz.png" alt="kuis">
+            </div>
+            <div class="text-content">
+                <h2>Kuis Kesehatan</h2>
+                <p>Uji pengetahuan kesehatan dengan kuis interaktif</p>
+            </div>
+            <div class="action-arrow">
+                <span>&gt;</span>
+            </div>
+        </a>
+    </div>
+    <br><br>
+</div>
+    <br><br>
+</main>
+</div>
+</div>
+<!-- Footer Navigation -->
+<nav class="navbar navbar-dark bg-dark fixed-bottom d-block d-lg-none">    <div class="container-fluid justify-content-around">
+        <a href="#" class="nav-link active">
+            <img src="home.png" alt="Home" style="width: 24px; height: 24px;" class="icon">
+        </a>
+        <a href="feedback/feedback.html" class="nav-link">
+            <img src="feedback.png" alt="Feedback" style="width: 24px; height: 24px;" class="icon">
+        </a>
+        <a href="qna/qna.html" class="nav-link">
+            <img src="qna.png" alt="QnA" style="width: 24px; height: 24px;" class="icon">
+        </a>
+        <a href="chatbot.html" class="nav-link">
+            <img src="chatbot.png" alt="Chatbot" style="width: 24px; height: 24px;" class="icon">
+        </a>
+    </div>
+</nav>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script src="home/main.js"></script>
+</body>
+</html>

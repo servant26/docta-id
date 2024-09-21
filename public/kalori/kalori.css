@@ -1,0 +1,53 @@
+.konten{
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.icon {
+    filter: brightness(0) invert(1); /* Membuat semua ikon menjadi putih */
+    transition: filter 0.3s ease, box-shadow 0.3s ease; /* Menambahkan transisi untuk filter dan box-shadow */
+}
+
+.nav-link {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    left: 0;
+    background: #e91e63;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link.active {
+    border-bottom: 2px solid #e91e63;
+    padding-bottom: 4px;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+.suggestions {
+    margin-top: 15px;
+    font-size: 1.2em;
+    color: #555;
+    font-size: 1.1em; /* Ukuran font default */
+}
+
+@media (max-width: 576px) { /* Untuk tampilan mobile */
+    .suggestions {
+        font-size: 0.9em; /* Ukuran font lebih kecil di mobile */
+    }
+}

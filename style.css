@@ -1,0 +1,227 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+
+.navbar-logo {
+  height: 60px;
+  max-height: 100%;
+  width: auto;
+}
+
+.navbar-nav .nav-link {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  display: block;
+  margin-top: 5px;
+  left: 0;
+  background: #e91e63;
+  transition: width 0.3s ease;
+}
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+.icon {
+  filter: brightness(0) invert(1); /* Membuat semua ikon menjadi putih */
+  transition: filter 0.3s ease, box-shadow 0.3s ease; /* Menambahkan transisi untuk filter dan box-shadow */
+}
+
+.nav-link {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  left: 0;
+  background: #e91e63;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link.active {
+  border-bottom: 2px solid #e91e63;
+  padding-bottom: 4px;
+}
+
+header {
+  background-color: rgb(252,4,99);
+  color: #fff;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 100px); /* Adjust height based on header and footer height */
+  padding: 20px;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Atur jarak antara elemen-elemen di dalamnya */
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+  padding: 40px;
+  min-height: 400px; /* Pastikan ini sesuai dengan kebutuhan */
+  margin-top: 6%;
+  margin-bottom: 7%;
+}
+
+.output {
+  margin-top: 30px;
+  padding: 15px;
+  background-color: #e9ecef;
+  border-radius: 8px;
+  color: #495057;
+  flex: 1; /* Memungkinkan .output untuk mengisi ruang yang tersisa */
+}
+
+h2 {
+  margin: 0 0 30px; /* Increased margin for more space */
+  font-size: 1.8rem; /* Default font size */
+  color: #333;
+}
+
+.prompt-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Increased gap for more space between elements */
+}
+
+input[type="text"] {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 12px; /* Increased padding for better spacing inside the input */
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  background-color: #fc2c78;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #fc0c60;
+}
+
+.output {
+  margin-top: 30px; /* Increased margin for more space */
+  padding: 15px; /* Increased padding for better spacing */
+  background-color: #e9ecef;
+  border-radius: 8px;
+  color: #495057;
+}
+
+footer {
+  background-color: rgb(252,4,99);
+  color: #fff;
+  text-align: left;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2%;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.corner-image {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  width: 250px; /* Ukuran default gambar untuk laptop/PC */
+  height: auto;
+  z-index: 1000;
+}
+
+/* Media Query untuk layar desktop dan lebih besar */
+@media (min-width: 1025px) {
+  .content-wrapper {
+    max-width: 70%; /* Atur lebar maksimum sesuai kebutuhan */
+  }
+}
+
+@media (max-width: 1024px) { /* Tablet */
+  .corner-image {
+    width: 150px; /* Ukuran gambar untuk tablet */
+  }
+  .content-wrapper {
+    padding: 6%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  footer{
+    padding: 4%;
+  }
+  h2 {
+    font-size: 1.6rem; /* Ukuran teks untuk tablet */
+  }
+}
+
+@media (max-width: 768px) { /* Smartphone */
+  .corner-image {
+    width: 120px; /* Ukuran gambar untuk smartphone */
+  }
+  .content-wrapper {
+    padding: 6%;
+    margin-top: 25%;
+    margin-bottom: 25%;
+  }
+  footer{
+    padding: 6%;
+  }
+  h2 {
+    font-size: 1.5rem; /* Ukuran teks untuk tablet */
+  }
+}
+
+
+

@@ -1,0 +1,282 @@
+body {
+    background-color: #f9f9f9;
+}
+.konten{
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.navbar-logo {
+    height: 60px;
+    max-height: 100%;
+    width: auto;
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    display: block;
+    margin-top: 5px;
+    left: 0;
+    background: #e91e63;
+    transition: width 0.3s ease;
+}
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+.text-center{
+    font-size: 0.8rem; 
+}
+
+.img-kusioner {
+    width: 100px; /* Sesuaikan ukuran lebar sesuai kebutuhan */
+    height: auto; /* Tinggi akan menyesuaikan secara proporsional */
+    object-fit: contain; /* Memastikan gambar tidak terdistorsi */
+    margin-right: 15px;
+}
+
+.menu-item {
+    padding: 10px; /* Tambahkan padding untuk memberikan ruang */
+    text-decoration: none; /* Menghapus garis bawah */
+    color: inherit; /* Menggunakan warna teks yang ada */
+    display: inline-block; /* Memastikan elemen menempati ruang yang benar */
+    transition: transform 0.3s ease; /* Transisi untuk efek hover pada menu-item */
+}
+
+.menu-item img {
+    transition: transform 0.3s ease; /* Transisi untuk gambar */
+}
+
+.menu-item:hover {
+    transform: scale(1.05); /* Membesar saat hover pada link */
+}
+
+.menu-item:hover img {
+    transform: scale(1.1); /* Membesar gambar saat hover */
+}
+
+.btn-outline-primary {
+    font-size: 14px;
+    padding: 10px;
+}
+
+.card {
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.navbar .nav-link {
+    font-size: 14px;
+    color: white;
+}
+
+.navbar .nav-link.active {
+    font-weight: bold;
+}
+
+.custom-card {
+    border-radius: 15px; /* Rounded corners */
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.card-vector {
+    max-width: 120px; /* Set a max width for the doctor image */
+    margin-right: 10px;
+}
+
+.main-container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.info-card {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 15px;
+    transition: transform 0.2s;
+    position: relative;
+    padding-right: 18px;
+    font-size: 0.9em;
+    text-decoration: none;
+}
+
+.info-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px; /* Width of the colored bar */
+    height: 100%; /* Full height of the card */
+    border-radius: 8px 0 0 8px; /* Rounded corners */
+}
+
+.info-card:nth-child(1)::before {
+    background-color: rgb(58, 102, 221); /* Red for the first card */
+}
+
+.info-card:nth-child(2)::before {
+    background-color: rgb(226, 120, 21); /* Yellow for the second card */
+}
+
+.info-card:nth-child(3)::before {
+    background-color: rgb(11, 138, 68); /* Green for the third card */
+}
+
+.info-card:hover {
+    transform: scale(1.02);
+}
+
+.icon-container {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.icon-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.text-content {
+    flex-grow: 1;
+}
+
+.text-content h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.text-content p {
+    margin: 5px 0 0;
+    color: #666;
+}
+
+.action-arrow {
+    font-size: 24px;
+    color: #ccc;
+}
+.swiper {
+    width: 100%;
+    padding: 10px;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    border-radius: 10px;
+    background-color: #fff;
+    width: 100%;
+}
+
+.card-body {
+    text-align: center;
+}
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block; /* Pastikan card-link menjadi elemen blok */
+    transition: transform 0.3s ease-in-out; /* Transisi yang halus */
+}
+
+.card {
+    transition: transform 0.2s ease-in-out; /* Pastikan card juga memiliki transisi */
+}
+
+.card-link:hover .card {
+    transform: scale(1.05); /* Membesarkan card */
+}
+
+
+.icon {
+    filter: brightness(0) invert(1); /* Membuat semua ikon menjadi putih */
+    transition: filter 0.3s ease, box-shadow 0.3s ease; /* Menambahkan transisi untuk filter dan box-shadow */
+}
+
+.nav-link {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    left: 0;
+    background: #e91e63;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link.active {
+    border-bottom: 2px solid #e91e63;
+    padding-bottom: 4px;
+}
+
+/* Untuk perangkat kecil (smartphone) */
+@media (max-width: 576px) {
+    .img-fluid {
+        width: 100%; /* Lebar penuh untuk smartphone */
+    }
+    .card-text{
+        font-size: 0.9em;
+    }
+    .custom-card {
+        padding: 2px;
+    }
+}
+
+/* Untuk perangkat medium (tablet) */
+@media (min-width: 577px) and (max-width: 1024px) {
+    .img-fluid {
+        width: 50%; /* Lebar 80% untuk tablet */
+    }
+    .custom-card {
+        padding: 20px;
+    }
+    .wadah{
+        padding: 0% 3% 0% 3%;
+    }
+}
+
+/* Untuk perangkat besar (laptop) */
+@media (min-width: 1025px) {
+    .img-fluid {
+        width: 40%; /* Lebar 75% untuk laptop */
+    }
+    .custom-card {
+        padding: 30px;
+    }
+    .card-vector {
+        max-width: 150px; /* Set a max width for the doctor image */
+        margin-right: 10px;
+    }
+    .wadah{
+        padding: 0% 5% 0% 5%;
+    }
+}

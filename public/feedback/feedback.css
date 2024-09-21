@@ -1,0 +1,157 @@
+.konten{
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.icon {
+    filter: brightness(0) invert(1); /* Membuat semua ikon menjadi putih */
+    transition: filter 0.3s ease, box-shadow 0.3s ease; /* Menambahkan transisi untuk filter dan box-shadow */
+}
+
+.nav-link {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    left: 0;
+    background: #e91e63;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link.active {
+    border-bottom: 2px solid #e91e63;
+    padding-bottom: 4px;
+}
+
+.info-card {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.2s;
+    position: relative;
+    padding-right: 18px;
+    padding-left: 18px;
+    font-size: 0.9em;
+    text-decoration: none;
+}
+
+.info-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px; /* Width of the colored bar */
+    height: 100%; /* Full height of the card */
+    border-radius: 8px 0 0 8px; /* Rounded corners */
+}
+
+.info-card:nth-child(1)::before {
+    background-color: rgb(58, 102, 221); /* Red for the first card */
+}
+
+.info-card:nth-child(2)::before {
+    background-color: rgb(226, 120, 21); /* Yellow for the second card */
+}
+
+.info-card:nth-child(3)::before {
+    background-color: rgb(11, 138, 68); /* Green for the third card */
+}
+
+.info-card:nth-child(4)::before {
+    background-color: rgb(27, 116, 138); /* Red for the first card */
+}
+
+.info-card:nth-child(5)::before {
+    background-color: rgb(170, 73, 133); /* Yellow for the second card */
+}
+
+.info-card:hover {
+    transform: scale(1.02);
+}
+
+.icon-container {
+    /* width: 150px;
+    height: 150px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.icon-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.text-content {
+    flex-grow: 1;
+}
+
+.text-content h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.text-content p {
+    margin: 5px 0 0;
+    color: #666;
+}
+
+.action-arrow {
+    font-size: 24px;
+    color: #ccc;
+}
+
+/* Untuk perangkat medium (tablet) */
+@media (max-width: 577px) {
+    .konten{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .icon-container {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/* Untuk perangkat medium (tablet) */
+@media (min-width: 578px) and (max-width: 1024px) {
+    .konten{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .icon-container {
+        width: 80px;
+        height: 80px;
+    }
+
+}
+
+/* Untuk perangkat besar (laptop) */
+@media (min-width: 1025px) {
+    .konten{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .icon-container {
+        width: 100;
+        height: 100px;
+    }
+}

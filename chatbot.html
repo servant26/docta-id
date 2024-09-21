@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docta ID</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Header Section -->
+<!-- Awal Navbar -->
+<nav class="navbar sticky-top navbar-expand-lg bg-dark navbar-dark">
+    <div class="container-fluid m-2 d-flex align-items-center">
+        <div class="dropdown">
+            <a class="navbar-brand" href="#">
+                <img src="../docta.png" class="navbar-logo" alt="Docta Logo" style="width: 50px; height: 50px;">
+                <span class="d-inline d-lg-none ms-2 text-white">Docta ID</span>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="../">Home</a>
+            </li>
+            <li class="nav-item mx-3 d-block d-lg-none">
+                <a class="nav-link" href="#">Menu Utama</a>
+            </li>
+            <li class="nav-item mx-3 d-block d-lg-none">
+                <a class="nav-link" href="#">Artikel Kesehatan</a>
+            </li>
+            <li class="nav-item mx-3 d-block d-lg-none">
+                <a class="nav-link" href="#">Lainnya</a>
+            </li>
+            <li class="nav-item mx-3">
+                <a class="nav-link" href="../feedback/feedback.html">Feedback</a>
+            </li>
+            <li class="nav-item mx-3">
+                <a class="nav-link" href="qna/qna.html">QnA</a>
+            </li>
+            <li class="nav-item mx-3">
+                <a class="nav-link active" href="#">Tanya Docta</a>
+            </li>
+        </ul>
+        </div>
+    </div>
+</nav>
+<!-- Akhir Navbar -->
+
+<main>
+  <div class="content-wrapper">
+    <h2>Konsultasi kesehatan bareng Docta yuk..</h2>
+    <form>
+        <div class="prompt-box">
+          <input name="prompt" placeholder="Ketik disini..." type="text" autofocus>
+          <button class="btn btn-primary" type="submit">Kirim</button>
+        </div>
+    </form>
+    <p class="output">Jawabannya akan muncul disini...</p>
+  </div>
+</main>
+
+<nav class="navbar navbar-dark bg-dark fixed-bottom d-block d-lg-none">
+    <div class="container-fluid justify-content-around">
+        <a href="../index.html" class="nav-link">
+            <img src="../home.png" alt="Home" style="width: 24px; height: 24px;" class="icon">
+        </a>
+        <a href="../feedback/feedback.html" class="nav-link">
+            <img src="../feedback.png" alt="Feedback" style="width: 24px; height: 24px;" class="icon">
+        </a>
+        <a href="../qna/qna.html" class="nav-link">
+            <img src="../qna.png" alt="QnA" style="width: 24px; height: 24px;" class="icon">
+        </a>
+        <a href="../chatbot.html" class="nav-link active">
+            <img src="../chatbot.png" alt="Chatbot" style="width: 24px; height: 24px;" class="icon">
+        </a>
+    </div>
+</nav>
+
+  <script type="module" src="main.js"></script>
+  <script>
+    const keywords = {
+      umum: [
+        "kesehatan", "sehat", "medis", "dokter", "obat", "klinik", "sakit", "diagnosis",
+        "gejala", "penyakit", "terapi", "konsultasi", "rawat jalan", "rawat inap", "resep",
+        "operasi", "imunisasi", "kesehatan anak", "lansia", "lanjut usia", "pediatri", "geriatrik",
+        "kehamilan", "persalinan", "bayi", "remaja", "dewasa", "ibu", 
+        "penyuluhan", "vaksinasi", "pemulihan", "menstruasi", "haid", 
+        "datang bulan", "menopause", "luka", "stress", "kronis", "rawat", "radang" ,"iritasi", "mental", "menular", "infeksi", "diet"
+      ],
+      penyakit: [
+        "diabetes", "kanker", "jantung", "hipertensi", "stroke", "tuberkulosis", "malaria", 
+        "demam", "covid", "infeksi", "meningitis", "hepatitis", "ginjal", "liver", 
+        "asma", "paru-paru", "bronkitis", "gagal ginjal", "lupus", "epilepsi", "autisme",
+        "down syndrome", "thalasemia", "kolesterol", "asam urat", "asam lambung", "anemia", "tekanan", 
+        "katarak", "glaukoma", "gangguan pencernaan", "dispepsia", "maag", "gastritis", 
+        "radang usus", "iritasi usus", "hernia", "varises", "obesitas", "osteoporosis", 
+        "alzheimer", "dementia", "penyakit menular", "penyakit kronis", "infeksi saluran kemih", 
+        "cacar air", "tifus", "leukemia", "rabies", "psoriasis", "ekzema", "dermatitis", 
+        "alergi", "infeksi jamur", "paru-paru basah", "kolitis", "migrain", "hipotiroid", 
+        "hipertiroid", "gangguan makan", "bulimia", "anoreksia", "skizofrenia", "depresi", 
+        "bipolar", "kecemasan", "panik", "gout", "radang sendi", "multiple sclerosis", 
+        "parkinson", "sirosis", "varicella", "sinusitis", "amandel", 
+        "infeksi saluran pernafasan", "pneumonia", "disfagia", "emfisema", "fibromyalgia", 
+        "endometriosis", "kista ovarium", "disfungsi ereksi", "fibroid", 
+        "pneumotoraks", "radang panggul", "ulcerative colitis", "bronkitis", "darah rendah", "darah tinggi"
+      ],
+      anggotaTubuh: [
+        "mata", "telinga", "hidung", "mulut", "leher", "dada", "perut", "lengan", 
+        "kaki", "lutut", "punggung", "wajah", "tulang", "sendi", "otot", "kulit",
+        "rambut", "gigi", "gusi", "tenggorokan", "tangan"
+      ],
+      anggotaTubuhDalam: [
+        "jantung", "paru-paru", "hati", "ginjal", "usus besar", "usus kecil", "lambung", 
+        "empedu", "pankreas", "limpa", "tiroid", "kelenjar adrenal", "kantong empedu", 
+        "saraf", "arteri", "vena", "kelenjar getah bening", "kandung kemih", "rahim", 
+        "ovarium", "prostat", "testis", "ureter", "uretra", "bronkus", "diafragma", 
+        "duodenum", "kerongkongan", "hipotalamus", "hipofisis", "tulang rusuk", "tulang panggul"
+      ],
+      gejala: [
+        "demam", "batuk", "pilek", "sesak napas", "mual", "muntah", "diare", "nyeri perut", 
+        "pusing", "sakit kepala", "pegal-pegal", "gatal", "merah-merah", "bengkak", 
+        "kejang", "keletihan", "keringat dingin", "nyeri dada", "nyeri", "ngilu", "berdarah", 
+        "penglihatan kabur", "jantung berdebar", "mimisan", "tremor", "sulit tidur", 
+        "gelisah", "pingsan", "sulit bicara", "lumpuh", "kesemutan", "gangguan pendengaran", 
+        "sulit menelan", "kembung", "nyeri sendi", "nyeri otot", "gigi berlubang"
+      ]
+    };
+
+    const pertanyaan = {
+      umum: [
+        "Apa itu ",
+        "Informasi tentang ",
+      ],
+      penyakit: [
+        "Apa itu ",
+        "Bagaimana mencegah ",
+        "Apa gejala dari ",
+        "Apa pengobatan untuk "
+      ],
+      anggotaTubuh: [
+        "Apa fungsi dari ",
+        "Bagaimana menjaga kesehatan ",
+        "Bagaimana jika terjadi masalah pada ",
+        "Kapan harus periksa jika ada masalah pada "
+      ],
+      anggotaTubuhDalam: [
+        "Apa fungsi dari ",
+        "Bagaimana menjaga kesehatan ",
+        "Bagaimana jika terjadi masalah pada ",
+        "Kapan harus periksa jika ada masalah pada "
+      ],
+      gejala: [
+        "Apa penyebab dari ",
+        "Bagaimana cara mengatasi ",
+        "Apakah berbahaya jika mengalami gejala seperti ",
+        "Kapan harus ke dokter jika mengalami gejala "
+      ]
+    };
+
+    function getRandomKeyword() {
+      const kategori = Object.keys(keywords)[Math.floor(Math.random() * Object.keys(keywords).length)];
+      const randomIndex = Math.floor(Math.random() * keywords[kategori].length);
+      return { kategori: kategori, keyword: keywords[kategori][randomIndex] };
+    }
+
+    function getRandomPertanyaan(kategori) {
+      const randomIndex = Math.floor(Math.random() * pertanyaan[kategori].length);
+      return pertanyaan[kategori][randomIndex];
+    }
+
+    const promptInput = document.querySelector('input[name="prompt"]');
+    const randomKeyword = getRandomKeyword();
+    promptInput.value = getRandomPertanyaan(randomKeyword.kategori) + randomKeyword.keyword;
+  </script>
+</body>
+
+</html>
