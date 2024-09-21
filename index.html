@@ -33,7 +33,7 @@
                     <a class="nav-link" href="#">Menu Utama</a>
                 </li>
                 <li class="nav-item mx-3 d-block d-lg-none">
-                    <a class="nav-link" href="#">Artikel Kesehatan</a>
+                    <a class="nav-link" href="#">Kusioner Kesehatan</a>
                 </li>
                 <li class="nav-item mx-3 d-block d-lg-none">
                     <a class="nav-link" href="#">Lainnya</a>
@@ -93,40 +93,24 @@
         </a>
     </div>
     <div class="col-3 text-center">
-        <a href="olahraga/olahraga.html" class="menu-item">
-            <img src="running.png" alt="Olahraga Harian" class="img-fluid mb-2">
-            <p>Olahraga Harian</p>
+        <a href="#" class="menu-item" data-bs-toggle="tooltip" title="22 September 2024">
+            <img src="calender.png" alt="Kalender Kesehatan" class="img-fluid mb-2">
+            <p>Kalender Kesehatan</p>
         </a>
-    </div>
+    </div>    
 </div>
 
-    <!-- Educational Section -->
-    <div class="mt-2">
-        <div class="card p-3">
-            <div class="d-flex flex-row align-items-center">
-                <img src="healthy.png" alt="Kusioner kesehatan" class="img-kusioner">
-                <div>
-                    <h5>Isi Kusioner Kesehatan</h5>
-                    <p>Cek kondisi kesehatan kamu dengan cara mengisi kusioner</p>
-                </div>
-            </div>
-            <div>
-                <a href="kusioner/kusioner.html" class="btn btn-primary w-100 mt-2">Isi Kuesioner</a>
-            </div>
-        </div>
-    </div>
-
 <!-- Articles Section -->
-<div class="mt-4">
-    <h6 class="mb-3">Artikel Kesehatan</h6>
+<div class="mt-2">
+    <h6 class="mb-3">Kusioner Kesehatan</h6>
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <a href="artikel-nutrisi.html" class="card-link">
                     <div class="card">
-                        <img src="schedule.png" class="card-img-top" alt="...">
+                        <img src="depression.png" class="card-img-top" alt="depresi">
                         <div class="card-body">
-                            <p class="card-text">Nutrisi untuk Kesehatan Mental</p>
+                            <p class="card-text">Depresi</p>
                         </div>
                     </div>
                 </a>
@@ -134,9 +118,9 @@
             <div class="swiper-slide">
                 <a href="artikel-olahraga.html" class="card-link">
                     <div class="card">
-                        <img src="running.png" class="card-img-top" alt="...">
+                        <img src="diabetes.png" class="card-img-top" alt="diabetes">
                         <div class="card-body">
-                            <p class="card-text">Olahraga: Kunci Hidup Sehat</p>
+                            <p class="card-text">Diabetes</p>
                         </div>
                     </div>
                 </a>
@@ -144,9 +128,9 @@
             <div class="swiper-slide">
                 <a href="artikel-tidur.html" class="card-link">
                     <div class="card">
-                        <img src="sleep.png" class="card-img-top" alt="...">
+                        <img src="insomnia.png" class="card-img-top" alt="insomnia">
                         <div class="card-body">
-                            <p class="card-text">Tidur Berkualitas, Hidup Berkualitas</p>
+                            <p class="card-text">Insomnia</p>
                         </div>
                     </div>
                 </a>
@@ -154,9 +138,9 @@
             <div class="swiper-slide">
                 <a href="artikel-makanan.html" class="card-link">
                     <div class="card">
-                        <img src="balanced-diet.png" class="card-img-top" alt="...">
+                        <img src="hiv.png" class="card-img-top" alt="hiv">
                         <div class="card-body">
-                            <p class="card-text">Makanan Super untuk Imunitas</p>
+                            <p class="card-text">HIV/AIDS</p>
                         </div>
                     </div>
                 </a>
@@ -164,9 +148,19 @@
             <div class="swiper-slide">
                 <a href="artikel-makanan.html" class="card-link">
                     <div class="card">
-                        <img src="balanced-diet.png" class="card-img-top" alt="...">
+                        <img src="cholesterol.png" class="card-img-top" alt="Kolestrol">
                         <div class="card-body">
-                            <p class="card-text">Makanan Super untuk Imunitas</p>
+                            <p class="card-text">Kolestrol</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="artikel-makanan.html" class="card-link">
+                    <div class="card">
+                        <img src="heart-attack.png" class="card-img-top" alt="Penyakit Jantung">
+                        <div class="card-body">
+                            <p class="card-text">Penyakit Jantung</p>
                         </div>
                     </div>
                 </a>
@@ -186,13 +180,26 @@
     <h6 class="mb-3">Lainnya</h6>
     <div class="main-container">
         <!-- Section 1 -->
-        <a href="tantangan/tantangan.html" class="info-card">
+        <a href="#" class="info-card">
             <div class="icon-container">
                 <img src="event-list.png" alt="tantangan kesehatan">
             </div>
             <div class="text-content">
                 <h2>Tantangan Kesehatan Harian</h2>
-                <p>Ikuti tantangan harian untuk meningkatkan kesehatan</p>
+                <p id="tantangan-text"></p>
+            </div>
+            <div class="action-arrow">
+                <span>&gt;</span>
+            </div>
+        </a>
+
+        <a href="#" class="info-card">
+            <div class="icon-container">
+                <img src="event-list.png" alt="fakta kesehatan">
+            </div>
+            <div class="text-content">
+                <h2>Fakta Kesehatan</h2>
+                <p id="fakta-text"></p>
             </div>
             <div class="action-arrow">
                 <span>&gt;</span>
