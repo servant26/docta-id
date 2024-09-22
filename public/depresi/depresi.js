@@ -46,4 +46,6 @@ function calculateDepression() {
             <strong>Disclaimer:</strong> Tes ini hanya bersifat informatif dan bukan merupakan pengganti diagnosis profesional. Jika Anda merasa perlu, kami sarankan untuk berkonsultasi dengan ahli kesehatan mental.
         </div>
     `;
+        // Scroll ke elemen hasil
+        document.getElementById("result").scrollIntoView({ behavior: 'smooth' });
 }
