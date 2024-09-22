@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docta ID</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="kolestrol.css">
+</head>
+<body>
+<!-- Header Section -->
+<!-- Awal Navbar -->
+<div class="wadah">
+<nav class="navbar sticky-top navbar-expand-lg bg-dark navbar-dark">
+    <div class="container-fluid m-2 d-flex align-items-center">
+        <div class="dropdown">
+            <a class="navbar-brand" href="#">
+                <img src="../docta.png" class="navbar-logo" alt="Docta Logo" style="width: 50px; height: 50px;">
+                <span class="d-inline d-lg-none ms-2 text-white">Kusioner Kolestrol</span>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item mx-3">
+                    <a class="nav-link" href="../home/home.html">Home</a>
+                </li>
+                <li class="nav-item mx-3 d-block d-lg-none">
+                    <a class="nav-link" href="#">Menu Utama</a>
+                </li>
+                <li class="nav-item mx-3 d-block d-lg-none">
+                    <a class="nav-link" href="#">Artikel Kesehatan</a>
+                </li>
+                <li class="nav-item mx-3 d-block d-lg-none">
+                    <a class="nav-link" href="#">Lainnya</a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a class="nav-link" href="../feedback/feedback.html">Feedback</a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a class="nav-link" href="../qna/qna.html">QnA</a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a class="nav-link" href="../index.html">Tanya Docta</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Akhir Navbar -->
+<div class="konten">
+  <div class="container">
+    <h4 class="text-center mb-4">Pilih Opsi yang kamu rasakan saat ini</h4>
+    <!-- Halaman 1 -->
+    <div id="page-1" class="page active-page">
+      <form id="depressionTest">
+        <div class="question">
+            <label>1. Apakah Anda sering mengalami nyeri atau rasa tidak nyaman di dada saat beraktivitas?</label>
+            <select class="form-select" name="q1">
+              <option value="0">Tidak pernah</option>
+              <option value="1">Kadang-kadang</option>
+              <option value="2">Sering</option>
+              <option value="3">Sangat sering</option>
+            </select>
+          </div>
+          <div class="question">
+            <label>2. Apakah Anda sering merasa pusing, terutama setelah bangun dari posisi duduk atau berbaring?</label>
+            <select class="form-select" name="q2">
+              <option value="0">Tidak pernah</option>
+              <option value="1">Kadang-kadang</option>
+              <option value="2">Sering</option>
+              <option value="3">Sangat sering</option>
+            </select>
+          </div>
+          <div class="question">
+            <label>3. Apakah Anda pernah mengalami nyeri atau kram pada kaki saat berjalan atau berolahraga?</label>
+            <select class="form-select" name="q3">
+              <option value="0">Tidak pernah</option>
+              <option value="1">Kadang-kadang</option>
+              <option value="2">Sering</option>
+              <option value="3">Sangat sering</option>
+            </select>
+          </div>
+          <div class="question">
+            <label>4. Apakah Anda pernah merasakan lelah yang berlebihan meskipun tidak melakukan aktivitas berat?</label>
+            <select class="form-select" name="q4">
+              <option value="0">Tidak pernah</option>
+              <option value="1">Kadang-kadang</option>
+              <option value="2">Sering</option>
+              <option value="3">Sangat sering</option>
+            </select>
+          </div>
+          <div class="question">
+            <label>5. Apakah Anda pernah melihat adanya benjolan kecil kekuningan (xanthelasma) di sekitar mata atau kelopak mata?</label>
+            <select class="form-select" name="q5">
+              <option value="0">Tidak</option>
+              <option value="3">Ya</option>
+            </select>
+          </div>
+      </form>
+      <button class="btn btn-primary mt-3" onclick="showPage(2)">Berikutnya</button>
+    </div>
+
+    <!-- Halaman 2 -->
+    <div id="page-2" class="page">
+        <div class="question">
+            <label>6. Apakah Anda sering mengalami sesak napas, terutama saat beraktivitas ringan?</label>
+            <select class="form-select" name="q6">
+              <option value="0">Tidak pernah</option>
+              <option value="1">Kadang-kadang</option>
+              <option value="2">Sering</option>
+              <option value="3">Sangat sering</option>
+            </select>
+          </div>
+          <div class="question">
+            <label>7. Apakah Anda sering merasa berat atau tidak nyaman di bagian leher atau pundak?</label>
+            <select class="form-select" name="q7">
+              <option value="0">Tidak pernah</option>
+              <option value="1">Kadang-kadang</option>
+              <option value="2">Sering</option>
+              <option value="3">Sangat sering</option>
+            </select>
+          </div>
+          <div class="question">
+            <label>8. Apakah Anda mengalami masalah penglihatan, seperti penglihatan kabur secara tiba-tiba?</label>
+            <select class="form-select" name="q8">
+              <option value="0">Tidak pernah</option>
+              <option value="1">Kadang-kadang</option>
+              <option value="2">Sering</option>
+              <option value="3">Sangat sering</option>
+            </select>
+          </div>
+          <div class="question">
+            <label>9. Apakah Anda sering merasakan mual atau muntah tanpa alasan yang jelas?</label>
+            <select class="form-select" name="q9">
+              <option value="0">Tidak pernah</option>
+              <option value="1">Kadang-kadang</option>
+              <option value="2">Sering</option>
+              <option value="3">Sangat sering</option>
+            </select>
+          </div>
+          <div class="question">
+            <label>10. Apakah kulit atau jari-jari kaki dan tangan Anda pernah terlihat kebiruan atau pucat?</label>
+            <select class="form-select" name="q10">
+              <option value="0">Tidak pernah</option>
+              <option value="1">Kadang-kadang</option>
+              <option value="2">Sering</option>
+              <option value="3">Sangat sering</option>
+            </select>
+          </div>
+      <button class="btn btn-secondary mt-3" onclick="showPage(1)">Sebelumnya</button>
+      <button class="btn btn-primary mt-3" onclick="showPage(3)">Berikutnya</button>
+    </div>
+
+    <!-- Halaman 3 -->
+    <div id="page-3" class="page">
+        <div class="question">
+            <label>11. Apakah Anda sering merasa kesemutan atau kebas pada jari-jari kaki atau tangan?</label>
+            <select class="form-select" name="q11">
+              <option value="0">Tidak pernah</option>
+              <option value="1">Kadang-kadang</option>
+              <option value="2">Sering</option>
+              <option value="3">Sangat sering</option>
+            </select>
+          </div>
+          <div class="question">
+            <label>12. Apakah Anda pernah mengalami detak jantung tidak teratur atau jantung berdebar tanpa alasan?</label>
+            <select class="form-select" name="q12">
+              <option value="0">Tidak pernah</option>
+              <option value="1">Kadang-kadang</option>
+              <option value="2">Sering</option>
+              <option value="3">Sangat sering</option>
+            </select>
+          </div>
+          <div class="question">
+            <label>13. Apakah Anda pernah mengalami perubahan warna kulit menjadi lebih pucat atau kekuningan?</label>
+            <select class="form-select" name="q13">
+              <option value="0">Tidak pernah</option>
+              <option value="1">Kadang-kadang</option>
+              <option value="2">Sering</option>
+              <option value="3">Sangat sering</option>
+            </select>
+          </div>
+          <div class="question">
+            <label>14. Apakah Anda merasa berat badan Anda naik secara tiba-tiba atau tidak terkontrol?</label>
+            <select class="form-select" name="q14">
+              <option value="0">Tidak pernah</option>
+              <option value="1">Kadang-kadang</option>
+              <option value="2">Sering</option>
+              <option value="3">Sangat sering</option>
+            </select>
+          </div>
+          <div class="question">
+            <label>15. Apakah Anda merasa cepat lelah atau mudah mengantuk setelah makan makanan berlemak?</label>
+            <select class="form-select" name="q15">
+              <option value="0">Tidak pernah</option>
+              <option value="1">Kadang-kadang</option>
+              <option value="2">Sering</option>
+              <option value="3">Sangat sering</option>
+            </select>
+          </div>
+      <button class="btn btn-secondary mt-3" onclick="showPage(2)">Sebelumnya</button>
+      <button class="btn btn-primary mt-3" onclick="calculateDepression()">Hitung Tingkat Kolestrol<button>
+    </div>
+
+    <div id="result" class="mt-4"></div>
+  </div>
+</div>
+<nav class="navbar navbar-dark bg-dark fixed-bottom d-block d-lg-none">
+    <div class="container-fluid justify-content-around">
+        <a href="../home/home.html" class="nav-link active">
+            <img src="../home.png" alt="Home" style="width: 24px; height: 24px;" class="icon">
+        </a>
+        <a href="../feedback/feedback.html" class="nav-link">
+            <img src="../feedback.png" alt="Feedback" style="width: 24px; height: 24px;" class="icon">
+        </a>
+        <a href="../qna/qna.html" class="nav-link">
+            <img src="../qna.png" alt="QnA" style="width: 24px; height: 24px;" class="icon">
+        </a>
+        <a href="../index.html" class="nav-link">
+            <img src="../chatbot.png" alt="Chatbot" style="width: 24px; height: 24px;" class="icon">
+        </a>
+    </div>
+</nav>
+</div>
+<br><br><br>
+</body>
+<script src="kolestrol.js"></script>
+</html>

@@ -1,6 +1,17 @@
-.konten{
+.question {
+    margin-bottom: 15px;
+}
+.page {
+    display: none;
+}
+.active-page {
+    display: block;
+}
+
+.konten {
     padding-left: 5%;
     padding-right: 5%;
+    margin-top: 5%;
 }
 
 .icon {
@@ -33,21 +44,4 @@
 .nav-link.active {
     border-bottom: 2px solid #e91e63;
     padding-bottom: 4px;
-}
-
-.result {
-    margin-top: 20px;
-    font-size: 1.5em;
-}
-.suggestions {
-    margin-top: 15px;
-    font-size: 1.2em;
-    color: #555;
-    font-size: 1.1em; /* Ukuran font default */
-}
-
-@media (max-width: 576px) { /* Untuk tampilan mobile */
-    .suggestions {
-        font-size: 0.9em; /* Ukuran font lebih kecil di mobile */
-    }
 }
