@@ -110,6 +110,8 @@ body {
     padding-right: 18px;
     font-size: 0.9em;
     text-decoration: none;
+    height: auto; /* Card menyesuaikan ketinggian dengan konten */
+    min-height: 70px; /* Menjaga minimal tinggi */
 }
 
 .info-card::before {
@@ -145,6 +147,7 @@ body {
     align-items: center;
     justify-content: center;
     margin-right: 15px;
+    flex-shrink: 0; /* Pastikan gambar tidak mengecil */
 }
 
 .icon-container img {
