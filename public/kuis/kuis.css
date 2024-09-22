@@ -34,3 +34,89 @@
     border-bottom: 2px solid #e91e63;
     padding-bottom: 4px;
 }
+
+
+body {
+    background-color: #e9f7ef;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+}
+.container {
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+}
+h1 {
+    margin-bottom: 30px;
+}
+.card {
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: #f8f9fa;
+    transition: all 0.3s;
+}
+/* .card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+} */
+.card-title {
+    font-size: 1.1em;
+}
+.btn-primary {
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+.btn-primary:hover {
+    background-color: #218838;
+}
+#result {
+    font-size: 1.5em;
+    margin-top: 20px;
+    color: #17a2b8;
+}
+#warning {
+    font-size: 1.2em;
+    color: #dc3545;
+}
+.radio-label {
+    margin-left: 8px;
+}
+.radio-option {
+    margin-bottom: 10px; /* Tambahkan jarak bawah */
+}
+
+.result-score {
+    font-size: 1.2em; /* Ubah sesuai kebutuhan */
+    margin-top: 20px;
+}
+
+.result-description {
+    font-size: 0.7em; /* Ubah sesuai kebutuhan */
+    margin-top: 10px;
+}
+
+.warning-message {
+    font-size: 0.9em; /* Ubah sesuai kebutuhan */
+    color: #dc3545; /* Warna merah untuk peringatan */
+    margin-top: 10px;
+}
+
+
+@media (max-width: 576px) {
+    .container {
+        padding: 20px;
+    }
+    .btn-primary {
+        width: 100%;
+    }
+    .card-title {
+        font-size: 1.0em;
+        margin-bottom: 5%;
+    }
+}

@@ -16,7 +16,7 @@
         <div class="dropdown">
             <a class="navbar-brand" href="#">
                 <img src="../docta.png" class="navbar-logo" alt="Docta Logo" style="width: 50px; height: 50px;">
-                <span class="d-inline d-lg-none ms-2 text-white">Kuis Kesehatan</span>
+                <span class="d-inline ms-2 text-white">Kuis Kesehatan</span>
             </a>
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -34,13 +34,13 @@
                     <a class="nav-link" href="#">Lainnya</a>
                 </li>
                 <li class="nav-item mx-3">
-                    <a class="nav-link" href="#">Feedback</a>
+                    <a class="nav-link" href="../feedback/feedback.html">Feedback</a>
                 </li>
                 <li class="nav-item mx-3">
                     <a class="nav-link" href="../qna/qna.html">QnA</a>
                 </li>
                 <li class="nav-item mx-3">
-                    <a class="nav-link" href="../chatbot/index.html">Tanya Docta</a>
+                    <a class="nav-link" href="../index.html">Tanya Docta</a>
                 </li>
             </ul>
         </div>
@@ -48,6 +48,13 @@
 </nav>
 <!-- Akhir Navbar -->
 
+<div class="container">
+    <h1 class="text-center">Kerjakan soal berikut!</h1>
+    <div id="questions"></div>
+    <button id="submit" class="btn btn-primary mt-3">Kirim Jawaban</button>
+    <div id="result" class="mt-3"></div>
+    <div id="warning" class="text-danger mt-3"></div>
+</div>
 <nav class="navbar navbar-dark bg-dark fixed-bottom d-block d-lg-none">
     <div class="container-fluid justify-content-around">
         <a href="../home/home.html" class="nav-link active">
@@ -59,12 +66,14 @@
         <a href="../qna/qna.html" class="nav-link">
             <img src="../qna.png" alt="QnA" style="width: 24px; height: 24px;" class="icon">
         </a>
-        <a href="../chatbot/index.html" class="nav-link">
+        <a href="../index.html" class="nav-link">
             <img src="../chatbot.png" alt="Chatbot" style="width: 24px; height: 24px;" class="icon">
         </a>
     </div>
 </nav>
 </div>
-<br>
+<br><br><br>
 </body>
+
+<script src="kuis.js"></script>
 </html>
