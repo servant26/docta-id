@@ -16,7 +16,7 @@
         <div class="dropdown">
             <a class="navbar-brand" href="#">
                 <img src="../docta.png" class="navbar-logo" alt="Docta Logo" style="width: 50px; height: 50px;">
-                <span class="d-inline d-lg-none ms-2 text-white">Kusioner Insomnia</span>
+                <span class="d-inline ms-2 text-white">Kusioner Kesehatan</span>
             </a>
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -52,7 +52,7 @@
     <h4 class="text-center mb-4">Pilih Opsi yang kamu rasakan saat ini</h4>
     <!-- Halaman 1 -->
     <div id="page-1" class="page active-page">
-      <form id="depressionTest">
+      <form id="insomniaTest">
         <div class="question">
           <label>1. Seberapa sering Anda mengalami kesulitan untuk tidur?</label>
           <select class="form-select" name="q1">
@@ -201,7 +201,7 @@
         </select>
       </div>
       <button class="btn btn-secondary mt-3" onclick="showPage(2)">Sebelumnya</button>
-      <button class="btn btn-primary mt-3" onclick="calculateDepression()">Hitung Tingkat Insomnia</button>
+      <button type="button" class="btn btn-primary mt-3" onclick="calculateInsomnia()">Hitung Tingkat Insomnia</button>
     </div>
 
     <div id="result" class="mt-4"></div>

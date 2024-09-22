@@ -6,14 +6,16 @@ function showPage(page) {
   document.getElementById(`page-${currentPage}`).classList.add('active-page');
 }
 
-function calculateDepression() {
-    const form = document.forms["depressionTest"];
+function calculateInsomnia() {
     let score = 0;
 
-    for (let i = 0; i < form.length; i++) {
-        if (form[i].type === "select-one") {
-            score += parseInt(form[i].value);
-        }
+    // Ambil semua elemen select dari setiap halaman
+    for (let i = 1; i <= 3; i++) {
+        const selects = document.querySelectorAll(`#page-${i} select`);
+        
+        selects.forEach(select => {
+            score += parseInt(select.value);
+        });
     }
 
     let resultText = "";

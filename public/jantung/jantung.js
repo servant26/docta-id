@@ -6,7 +6,7 @@ function showPage(page) {
     document.getElementById(`page-${currentPage}`).classList.add('active-page');
 }
 
-function calculateCholestrol() {
+function calculateJantung() {
     let score = 0;
 
     // Ambil semua elemen select dari setiap halaman
@@ -21,18 +21,17 @@ function calculateCholestrol() {
     let resultText = "";
     let alertClass = "";
 
-    // Penilaian berdasarkan risiko kolesterol
-    if (score <= 4) {
-        resultText = "Risiko kolesterol Anda rendah. Pertahankan gaya hidup sehat untuk menjaga kadar kolesterol Anda.";
+    if (score <= 5) {
+        resultText = "Risiko penyakit jantung Anda rendah. Pertahankan gaya hidup sehat dan lakukan pemeriksaan rutin.";
         alertClass = "alert alert-primary"; // Kelas untuk bg primary
-    } else if (score <= 8) {
-        resultText = "Anda memiliki risiko sedang untuk kolesterol tinggi. Disarankan untuk mulai memperhatikan pola makan dan rutinitas olahraga.";
+    } else if (score <= 10) {
+        resultText = "Anda memiliki risiko sedang untuk penyakit jantung. Disarankan untuk memperhatikan pola makan dan rutin berolahraga.";
         alertClass = "alert alert-warning"; // Kelas untuk bg warning
-    } else if (score <= 12) {
-        resultText = "Risiko kolesterol Anda tinggi. Anda harus mempertimbangkan untuk berkonsultasi dengan dokter dan membuat perubahan gaya hidup.";
-        alertClass = "alert alert-warning"; // Kelas untuk bg warning
+    } else if (score <= 15) {
+        resultText = "Risiko penyakit jantung Anda tinggi. Anda harus mempertimbangkan untuk berkonsultasi dengan dokter dan melakukan perubahan gaya hidup.";
+        alertClass = "alert alert-danger"; // Kelas untuk bg danger
     } else {
-        resultText = "Risiko kolesterol Anda sangat tinggi. Segera konsultasikan dengan dokter untuk mendapatkan perawatan yang lebih intensif.";
+        resultText = "Risiko penyakit jantung Anda sangat tinggi. Segera konsultasikan dengan dokter untuk mendapatkan perawatan yang tepat.";
         alertClass = "alert alert-danger"; // Kelas untuk bg danger
     }
     
