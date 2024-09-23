@@ -98,8 +98,8 @@ main {
   width: 100%;
   padding: 40px;
   min-height: 400px; /* Pastikan ini sesuai dengan kebutuhan */
-  margin-top: 6%;
-  margin-bottom: 7%;
+  /* margin-top: 6%;
+  margin-bottom: 7%; */
 }
 
 .output {
@@ -185,41 +185,28 @@ footer p {
 /* Media Query untuk layar desktop dan lebih besar */
 @media (min-width: 1025px) {
   .content-wrapper {
-    max-width: 70%; /* Atur lebar maksimum sesuai kebutuhan */
+    max-width: 60%; /* Atur lebar maksimum sesuai kebutuhan */
+    height: 500px;
   }
 }
 
-@media (max-width: 1024px) { /* Tablet */
-  .corner-image {
-    width: 150px; /* Ukuran gambar untuk tablet */
-  }
+@media (min-width: 769px) and (max-width: 1024px) { /* Tablet */
   .content-wrapper {
     padding: 6%;
-    margin-top: 10%;
-    margin-bottom: 10%;
   }
-  footer{
-    padding: 4%;
-  }
+ 
   h2 {
     font-size: 1.6rem; /* Ukuran teks untuk tablet */
   }
 }
 
 @media (max-width: 768px) { /* Smartphone */
-  .corner-image {
-    width: 120px; /* Ukuran gambar untuk smartphone */
-  }
   .content-wrapper {
     padding: 6%;
-    margin-top: 25%;
     margin-bottom: 25%;
   }
-  footer{
-    padding: 6%;
-  }
   h2 {
-    font-size: 1.5rem; /* Ukuran teks untuk tablet */
+    font-size: 1.3rem; /* Ukuran teks untuk tablet */
   }
 }
 
