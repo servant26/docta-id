@@ -351,11 +351,12 @@
         "12-27": "Hari Kesatuan Gerak PKK"
     };
 
-// Fungsi untuk format tanggal Indonesia
+// Fungsi untuk format tanggal Indonesia, termasuk hari
 function formatTanggalIndonesia(date) {
-    const options = { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Asia/Jakarta' };
+    const options = { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Asia/Jakarta' };
     return date.toLocaleDateString('id-ID', options);
 }
+
 
 // Cari hari kesehatan terdekat
 function cariHariTerdekat(tanggalSekarang) {
