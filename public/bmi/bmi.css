@@ -40,8 +40,8 @@
     font-size: 1.2em;
 }
 .result img {
-    width: 150px; /* Lebar gambar */
-    height: 150px; /* Tinggi gambar */
+    width: 250px; /* Lebar gambar */
+    height: 250px; /* Tinggi gambar */
     object-fit: cover; /* Memastikan gambar terpotong dan memenuhi area */
     object-position: top; /* Menjaga bagian atas gambar tetap terlihat */
 }
@@ -50,9 +50,23 @@
     font-size: 1.2rem; /* Ukuran teks default */
 }
 
+.small-text {
+    font-size: 1.0em; /* Ukuran lebih kecil */
+}
+
 @media (max-width: 768px) {
     .bmi-description {
         font-size: 0.9rem; /* Ukuran teks yang lebih kecil untuk layar kecil */
         margin-top: 5%;
     }
+    .small-text {
+        font-size: 0.8em; /* Ukuran lebih kecil */
+    }
+    .result img {
+        width: 150px; /* Lebar gambar */
+        height: 150px; /* Tinggi gambar */
+        object-fit: cover; /* Memastikan gambar terpotong dan memenuhi area */
+        object-position: top; /* Menjaga bagian atas gambar tetap terlihat */
+    }
+    
 }

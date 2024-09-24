@@ -48,6 +48,6 @@
 
 @media (max-width: 576px) { /* Untuk tampilan mobile */
     .suggestions {
-        font-size: 0.9em; /* Ukuran font lebih kecil di mobile */
+        font-size: 1.0em; /* Ukuran font lebih kecil di mobile */
     }
 }
