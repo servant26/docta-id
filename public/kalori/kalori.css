@@ -39,15 +39,26 @@
     margin-top: 20px;
     font-size: 1.5em;
 }
-.suggestions {
-    margin-top: 15px;
-    font-size: 1.2em;
-    color: #555;
-    font-size: 1.1em; /* Ukuran font default */
+
+.calorie-result {
+    font-size: 1.2rem; /* Ukuran teks Kebutuhan Kalori */
 }
 
-@media (max-width: 576px) { /* Untuk tampilan mobile */
-    .suggestions {
-        font-size: 1.0em; /* Ukuran font lebih kecil di mobile */
+.calorie-description {
+    font-size: 1.0rem; /* Ukuran teks deskripsi */
+    padding-top: 2px;
+}
+
+/* Media query untuk penyesuaian ukuran di perangkat lebih kecil */
+@media (max-width: 768px) {
+    .calorie-result {
+        font-size: 1.2rem; /* Ukuran lebih kecil untuk perangkat kecil */
+    }
+
+    .calorie-description {
+        font-size: 0.9rem; /* Ukuran lebih kecil untuk deskripsi */
+    }
+    .small-text {
+        font-size: 0.9em; /* Ukuran lebih kecil */
     }
 }

@@ -41,15 +41,12 @@ document.getElementById('calorieForm').addEventListener('submit', function(event
 
     // Tampilkan hasil dengan alert sesuai kategori
     document.getElementById('result').innerHTML = `
-        <div class="${alertClass}">
-            <div style="font-size: 20px;">  <!-- Ukuran teks Kebutuhan Kalori -->
-                Kebutuhan Kalori Harian Anda: <strong>${dailyCalories} kalori</strong>
-            </div>
-            <div style="font-size: 16px;" class="mt-2">  <!-- Ukuran teks deskripsi -->
-                ${suggestions}
-            </div>
-        </div>
-    `;
+    <div class="${alertClass}">
+        <div class="calorie-result">Kebutuhan Kalori Harian Anda: <strong>${dailyCalories} kalori</strong></div>
+        <div class="calorie-description">${suggestions}</div>
+    </div>
+`;
+
 
     // Tampilkan saran
     document.getElementById('suggestions').innerHTML = `
