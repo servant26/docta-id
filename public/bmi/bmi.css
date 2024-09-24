@@ -57,7 +57,7 @@
 @media (max-width: 768px) {
     .bmi-description {
         font-size: 0.9rem; /* Ukuran teks yang lebih kecil untuk layar kecil */
-        margin-top: 5%;
+        margin-top: 1%;
     }
     .small-text {
         font-size: 0.8em; /* Ukuran lebih kecil */
